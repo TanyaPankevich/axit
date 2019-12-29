@@ -1,0 +1,34 @@
+.wrapper {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.2s;
+    &:hover {
+    color: @color-text;
+}
+}
+
+a:hover,
+footer i:hover {
+    color: @color-theme;
+}
+
+.clear () {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+}

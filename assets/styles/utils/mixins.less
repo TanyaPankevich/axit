@@ -1,0 +1,40 @@
+.float-left (@width) {
+    float: left;
+    width: @width;
+    box-sizing: border-box;
+}
+
+.float-right (@width) {
+    float: right;
+    width: @width;
+    box-sizing: border-box;
+}
+
+.line-one () {
+    content: '';
+    display: block;
+    width: 64px;
+    border-bottom: 1px solid @text-white;
+}
+
+.line-center (@color) {
+    content: '';
+    display: inline-block;
+    width: 64px;
+    border: 1px solid @color;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -23px;
+}
+
+.line-shadow (@height){
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: @height;
+    background: linear-gradient(to top,
+            #eaeaea, #b7b7b7);
+}
